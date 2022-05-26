@@ -1,0 +1,27 @@
+.section-title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 156.3%;
+    color: #4E983D;
+    background: rgba(218, 215, 215, 0.6);
+    border-radius: 6px;
+    width: 250px;
+    border: 1px solid #4E983D;
+    margin: 5px 0;
+    align-self: center;
+}
+
+@media screen and (max-width:400px) {
+    .section-title {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 100.3%;
+        border-radius: 4px;
+        width: 150px;
+        border: 1px solid #4E983D;
+        margin: 3px 0;
+        align-self: center;
+    }
+}

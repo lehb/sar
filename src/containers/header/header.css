@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    justify-content: flex-start;
+    width: 400px;
+}
+
+.header h1 {
+    align-self: center;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-text);
+    margin: 1rem 0 .3rem 0;
+}

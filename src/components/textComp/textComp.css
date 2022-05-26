@@ -1,0 +1,50 @@
+.text-wraper {
+    opacity: 0.6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 5px;
+    max-width: 400px;
+}
+
+.textComp {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+.firstSapan {
+    padding-right: 3px;
+    font-family: var(--font-family);
+    margin-right: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 156.3%;
+    color: black;
+}
+
+.secondSapan {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 3px;
+    color: black;
+    font-style: italic;
+}
+
+p {
+    color: black;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+}

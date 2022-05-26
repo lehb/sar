@@ -1,0 +1,54 @@
+.logo h1 {
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--color-text);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+}
+
+.navbar-toggle img {
+    width: 62px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.signing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+.signing button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-subtext);
+    border: none;
+    border-radius: 6px;
+    padding: 3px;
+    margin-right: 12px;
+    line-height: 23px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    min-width: 60px;
+}
+
+.signing p {
+    text-decoration: underline;
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+}

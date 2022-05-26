@@ -1,0 +1,4 @@
+ span {
+     font-family: var(--font-family);
+     color: var(--color-text-error);
+ }

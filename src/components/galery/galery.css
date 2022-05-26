@@ -1,0 +1,53 @@
+.galery {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--font-family);
+    color: var(--color-subtext);
+}
+
+.galery__img-wrapper {
+    width: 200px;
+    height: 190px;
+    margin: 5px;
+}
+
+.galery__img-wrapper img {
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgb(255, 255, 255, .5);
+    border-radius: 3px;
+}
+
+.container-img-galery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(44, 43, 43, 0.2);
+    /* Black background with 0.5 opacity */
+    color: white;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    padding: 8px;
+    /* Some padding */
+}
+
+#p_content {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+}

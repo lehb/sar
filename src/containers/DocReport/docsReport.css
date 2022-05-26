@@ -1,0 +1,18 @@
+.docs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgReportSize {
+    width: 350px;
+    height: 250px;
+}
+
+.docs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}

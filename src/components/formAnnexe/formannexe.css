@@ -1,0 +1,25 @@
+#inputFile {
+    display: none;
+}
+
+.input-wapper img {
+    height: 30px;
+    width: 30px;
+}
+
+.form-annexe {
+    display: flex;
+    justify-content: center;
+    width: 390px;
+    align-items: stretch;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 40px;
+    background: rgba(111, 181, 114, 0.65);
+    cursor: pointer;
+}

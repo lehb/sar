@@ -1,0 +1,62 @@
+.nat-them {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+}
+
+.nature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+
+.report-content {
+    width: 80%;
+}
+
+.report {
+    background-color: rgb(245, 239, 239);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: white;
+}
+
+.desc-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--color-text);
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+}
+
+.f,
+.a,
+.d {
+    border: 1px solid gainsboro;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 760px) {
+    .nat-them,
+    .desc-infos {
+        display: flex;
+        flex-direction: column;
+    }
+}

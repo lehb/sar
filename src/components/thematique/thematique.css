@@ -1,0 +1,29 @@
+textarea {
+    background-color: #EAE6E6;
+    border-radius: 8px;
+    border: 0;
+    background: #C4C4C4;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+
+h3 {
+    color: var( --color-text);
+}
+
+::placeholder {
+    color: var(--color-text);
+    opacity: 0.5;
+}
+
+.input:focus {
+    outline: none !important;
+}
