@@ -32,7 +32,7 @@ const Ahr = () => {
 //    getAhrs()
 //   console.log(state);
 //   }, [])
-  const titles = ["Infos générales", "Foumulaires", "Thématique", "Documents","Actions"];
+  const titles = ["Infos générales", "Foumulaires", "Thématique","Actions"];
   const displayPage = () => {
     if (page === 0) {
       return <AHRinfos page={page} setPage={setPage} />;
@@ -40,10 +40,11 @@ const Ahr = () => {
       return <Fourmulaires page={page} setPage={setPage} />;
     } else if (page === 2) {
       return <Thematique page={page} setPage={setPage}/>;
-    } else if (page === 3) {
-      return <AHRdocuments page={page} setPage={setPage} />;
-    }
-   else if (page === 4)  {
+    } 
+    // else if (page === 3) {
+    //   return <AHRdocuments page={page} setPage={setPage} />;
+    // }
+   else if (page === 3)  {
       return <AHRAction page={page} setPage={setPage} />;
     }
   };

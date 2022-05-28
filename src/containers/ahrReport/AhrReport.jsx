@@ -11,25 +11,6 @@ const AhrReport = () => {
 const { state } = useContext(ahrContext);
 const exportAsImage =  () => {
   window.print()
-//   const element = document.getElementById('report')
-//   const html = document.getElementsByTagName("html")[0];
-//   const body = document.getElementsByTagName("body")[0];
-//   let htmlWidth = html.clientWidth;
-//   let bodyWidth = body.clientWidth;
-//   const newWidth = element.scrollWidth - element.clientWidth;
-//   if (newWidth > element.clientWidth) {
-//   htmlWidth += newWidth;
-//   bodyWidth += newWidth;
-//   }
-//   html.style.width = htmlWidth + "px";
-//   body.style.width = bodyWidth + "px";
-//   const canvas = await html2canvas(element);
-//   const image = canvas.toDataURL("image/png", 1.0);
-// let pdf = new jsPDF()
-// pdf.addImage(image,"png", 15, 40, 180, 180)
-// pdf.save('sample.pdf')
-//   html.style.width = null;
-//   body.style.width = null;
   };
   
   return (
@@ -68,10 +49,10 @@ const exportAsImage =  () => {
         <ReportFourmulaires fourmulaires={state.fourmulaires} />
 
           </div>
-          <div className="d">
+          {/* <div className="d">
         <DocsReport docs={state.documents} />
 
-            </div>
+            </div> */}
             <div className="a">
         <ReportActions actions={state.actions} />
 

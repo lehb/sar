@@ -7,8 +7,8 @@ const PaginaBTN = ({page,setPage}) => {
   const navigate =  useNavigate()
   const handleClickForward =(e)=>{
     e.preventDefault()
-if(page===4){
-  console.log('state a sauvgereder', state);
+if(page===3){
+  // console.log('state a sauvgereder', state);
  dispatch({
    type:'SAVE_AHR', 
    payload:state
@@ -16,7 +16,7 @@ if(page===4){
 
   navigate('/ahr-report')
 }
-else if(page<4){
+else if(page<3){
   setPage(page+1)
 }
   }
@@ -30,7 +30,7 @@ else if(page<4){
     <div className='paginate_buttons'>
         <button disabled={page==0}  onClick={handleClicBack}>Précedent</button>
         {/* Button suivant/generer rapport */}
-        <button onClick={handleClickForward}>{page==4?'Générer rapport':'Suivant'}</button>
+        <button onClick={handleClickForward}>{page==3?'Générer rapport':'Suivant'}</button>
     </div>
   )
 }
