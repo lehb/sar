@@ -10,7 +10,7 @@ const App = () => {
       <AuthContextProvider>
         <AhrContextProvider>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Ahr />} />
             <Route path="register" element={<Register />} />
             <Route path="login" element={<Login />} />
             <Route path="ahr" element={<Ahr />} />
