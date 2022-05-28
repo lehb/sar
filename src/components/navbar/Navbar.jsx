@@ -9,7 +9,7 @@ const Navbar = () => {
   const {state} = useContext(AuthContext)
   return(<div className="navbar"> 
     <div className="logo" onClick={()=>{
-      navigate('/')
+      navigate(to='/')
     }}>
       <h1>SAR</h1>
     </div>
