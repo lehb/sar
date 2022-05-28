@@ -1,13 +1,16 @@
 import React, {useContext} from "react";
 import "./navbar.css";
 import logo from '../../assets/linesmenu.svg'
-import {Link } from "react-router-dom";
+import {Link,useNavigate } from "react-router-dom";
 import { AuthContext } from "../../store/userContext";
 
 const Navbar = () => {
+  const navigate = useNavigate()
   const {state} = useContext(AuthContext)
   return(<div className="navbar"> 
-    <div className="logo">
+    <div className="logo" onClick={()=>{
+      navigate('/')
+    }}>
       <h1>SAR</h1>
     </div>
     <div className="signing">
