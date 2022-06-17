@@ -1,21 +1,20 @@
 import React from "react";
 import { ImgComp, Title } from "../../components";
 import "./reportActions.css";
-const ReportActions = ({ actions }) => {
+const ReportActions = ({ data, title }) => {
   return (
     <div className="actions-container">
-        <Title title="Actions"/>
+        <Title title={title}/>
       <div className="actions">
           {
-              actions ? actions.map((a,i)=>{
+              data ? data.map((a,i)=>{
                   return (<div className="imgReportSize">
                     <ImgComp key={i} src={a.img} name={a.title} />
-                    </div>)
-              }):"Pas d'action"
+                          </div>)
+              }):`Aucune ${title}`
           }
       </div>
     </div>
   );
 };
-
 export default ReportActions;

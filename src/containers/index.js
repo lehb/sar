@@ -16,3 +16,7 @@ export { default as DocsReport }
 from "./DocReport/DocsReport";
 export { default as ReportActions }
 from "./actions/ReportActions";
+export { default as Tour }
+from "./Tour/Tour";
+export { default as TourReport }
+from "./tourReport/TourReport";

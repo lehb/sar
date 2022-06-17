@@ -2,17 +2,14 @@ import React, { useContext } from "react";
 import "./ahrReport.css";
 import { HeadingReport, ImgComp, TextComp, Title } from "../../components";
 import ReportFourmulaires from "../Fourmulaires/ReportFourmulaires";
-import DocsReport from "../DocReport/DocsReport";
 import ReportActions from "../actions/ReportActions";
 import { ahrContext } from "../../store/ahrContext";
-import { jsPDF } from "jspdf";
-import html2canvas from 'html2canvas'
+
 const AhrReport = () => {
-const { state } = useContext(ahrContext);
-const exportAsImage =  () => {
-  window.print()
+  const { state } = useContext(ahrContext);
+  const exportAsImage = () => {
+    window.print();
   };
-  
   return (
     <div id="report" className="report">
       <div className="report-content">
@@ -24,10 +21,10 @@ const exportAsImage =  () => {
           )} ${Date().slice(11, 15)} à ${Date().slice(16, 21)}`}
         />
         <div className="desc-infos">
-          <TextComp title="Infos" type="infos" data={state.infos_generales} />
+          <TextComp title="Infos" type="ahr" data={state.infos_generales} />
           <TextComp
             title="Description"
-            type="description"
+            type="ahr"
             data={state.infos_generales.desc}
           />
         </div>
@@ -40,23 +37,17 @@ const exportAsImage =  () => {
             />
           </div>
           <TextComp
-          title="Thématique"
-          type="thématique"
-          data={state.thematique}
-        />
+            title="Thématique"
+            type="ahr"
+            data={state.thematique}
+          />
         </div>
         <div className="f">
-        <ReportFourmulaires fourmulaires={state.fourmulaires} />
-
-          </div>
-          {/* <div className="d">
-        <DocsReport docs={state.documents} />
-
-            </div> */}
-            <div className="a">
-        <ReportActions actions={state.actions} />
-
-              </div>
+          <ReportFourmulaires fourmulaires={state.fourmulaires} />
+        </div>
+        <div className="a">
+          <ReportActions data={state.actions} title="actions" />
+        </div>
       </div>
       <button onClick={exportAsImage}>Sauvegarder PDF</button>
     </div>

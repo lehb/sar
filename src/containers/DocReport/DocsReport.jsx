@@ -2,6 +2,7 @@ import React from "react";
 import { ImgComp, Title } from "../../components";
 import "./docsReport.css";
 const DocsReport = ({ docs }) => {
+  console.log("documents :", docs);
   return (
     <div className="docs-container">
       <Title title="Documents" />
@@ -9,7 +10,7 @@ const DocsReport = ({ docs }) => {
         {docs
           ? docs.map((d, i) => {
               return (
-               <div className="imgReportSize"><ImgComp key={i} src={d.img} name={d.title} /></div> 
+               <div key={i} className="imgReportSize"><ImgComp key={i} src={d.img} name={d.title} /></div> 
               );
             })
           : "Pas de document"}

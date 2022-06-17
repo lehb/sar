@@ -7,9 +7,9 @@ const AHRAction = ({page,setPage}) => {
   const [Actions, setActions] = useState([])
   return (
     <div>
-        <FormAnnexe type='Action'/>
+        <FormAnnexe type='ahr' action="ADD_ACTIONS"/>
         <Galery pieces={state.actions}/> 
-        <PaginaBTN page={page} setPage={setPage}/>
+        <PaginaBTN page={page} setPage={setPage} type='ahr'/>
     </div>
   )
 }

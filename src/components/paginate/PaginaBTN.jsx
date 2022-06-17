@@ -1,20 +1,18 @@
 import React,{useContext} from 'react'
 import { useNavigate } from "react-router-dom";
-import {ahrContext} from '../../store/ahrContext'
+import {TourContext} from '../../store/tourContext'
 import './paginat.css'
-const PaginaBTN = ({page,setPage}) => {
-  const {state,dispatch} = useContext(ahrContext)
+const PaginaBTN = ({page,setPage,type}) => {
+  const {stateTour,dispatchTour} = useContext(TourContext)
   const navigate =  useNavigate()
   const handleClickForward =(e)=>{
     e.preventDefault()
 if(page===3){
-  // console.log('state a sauvgereder', state);
- dispatch({
-   type:'SAVE_AHR', 
-   payload:state
- })
-
-  navigate('/ahr-report')
+  if (type=='tour') {
+    navigate('/tour-report')
+  }else if(type=='ahr'){
+    navigate('/ahr-report') 
+  }
 }
 else if(page<3){
   setPage(page+1)

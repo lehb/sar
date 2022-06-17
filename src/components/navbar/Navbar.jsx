@@ -9,11 +9,11 @@ const Navbar = () => {
   const {state} = useContext(AuthContext)
   return(<div className="navbar"> 
     <div className="logo" onClick={()=>{
-      navigate(to='/')
+      navigate('/')
     }}>
       <h1>SAR</h1>
     </div>
-    <div className="signing">
+    {/* <div className="signing">
       {
         !state?.user?.isAuthenticated?
         <Link to="/login"> <button >
@@ -28,7 +28,7 @@ const Navbar = () => {
       <p>Sign up</p>
      </Link>
       
-    </div>
+    </div> */}
     <nav className="navbar-toggle">
     <img src={logo} alt="menu"/>   
     </nav>

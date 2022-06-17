@@ -1,0 +1,18 @@
+.desc-infos {
+    height: 350px;
+}
+
+@media print {
+    tr,
+    td,
+    th {
+        page-break-inside: avoid
+    }
+    thead {
+        display: table-header-group
+    }
+    .NoPrint {
+        visibility: hidden;
+        display: none
+    }
+}

@@ -1,0 +1,78 @@
+.infos-action {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+#resp {
+    width: 300px;
+}
+
+#delai {
+    width: 300px;
+    height: 40px;
+    border: 0px;
+    background-color: rgba(111, 181, 114, 0.65);
+    color: var(--color-text);
+    ;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+table {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: var(--color-text);
+    background-color: rgb(113, 160, 113);
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+thead {
+    background-color: gainsboro;
+    color: var(--color-subtext);
+    border-radius: 3px;
+    border-bottom: 1px solid var(--color-subtext);
+}
+
+tr:nth-child(even) {
+    background-color: #949b6f;
+}
+
+h3 {
+    color: var(--color-subtext);
+    margin: 1rem 0;
+}
+
+.button {
+    font-family: var(--font-family);
+    color: var(--color-subtext);
+    border: none;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.74));
+    border-radius: 3px;
+    outline: none;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 10px;
+    padding: .5rem;
+    cursor: pointer;
+    margin-right: 10px;
+}

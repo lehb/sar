@@ -84,7 +84,7 @@ axiosInstance.post('/auth',user)
           value={formData.email}
           onChange={onChangeInput}
         />
-        {email && !/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/.test(email) ? 
+        {email && !/^[a-zA-Z0-9].[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/.test(email) ? 
             <Error text="email invalide" />
        
         : null}

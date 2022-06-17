@@ -2,12 +2,13 @@ import React from 'react'
 import Title from '../title/Title'
 import './textComp.css'
 const TextComp = ({title, data, type}) => {
+  console.log(data)
   return (
     <div className='textComp'>
     <Title title={title}/>
       <div className='text-wraper'>
        {
-        type==='infos'?
+        type==='ahr'?
        data?
           <ul>
           <li> <span className='firstSapan'>Encadrant </span> <span className='secondSapan'>{data.encadrant.toUpperCase()}</span></li>
@@ -18,8 +19,13 @@ const TextComp = ({title, data, type}) => {
           <li></li>
           </ul>
           :"Pas d'infos"
-:<p>
-{data? data:'Pas de données'}</p>}
+:<div>
+{data?   <ul>
+          <li> <span className='firstSapan'>Organisme </span> <span className='secondSapan'>{data.organisme.toUpperCase()}</span></li>
+          <li><span className='firstSapan'>HSE OCP </span><span className='secondSapan'>{data.hse_ocp.toUpperCase()}</span></li>
+          
+          <li></li>
+          </ul>:'Pas de données'}</div>}
      
     </div>
     </div>

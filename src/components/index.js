@@ -6,6 +6,8 @@ export { default as RegisterForm }
 from "./register/RegisterForm";
 export { default as FormAnnexe }
 from "./formAnnexe/FormAnnexe";
+export { default as FormAnnexe_bis }
+from "./formAnnexe_bis/FormAnnexe_bis";
 export { default as Galery }
 from "./galery/Galery";
 export {default as InfosGenerals} 
@@ -22,7 +24,8 @@ export { default as TextComp}
 from './textComp/TextComp'
 export { default as HeadingReport} 
 from './headingReport/HeadingReport'
-
+export { default as InfosTour} 
+from './infos_tour/InfosTour'
 export {default as Title} from './title/Title'
 
 
