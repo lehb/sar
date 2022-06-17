@@ -48,7 +48,7 @@ if(a.hasOwnProperty('action')){
         <div className="a">
           <ReportActions title="Actions immediates" data={actions_imm} />
         </div>
-        <Title title="Actions/recommandations" />
+        <h3>Actions/recommandations</h3>
         <div className="a">
                     <table>
             <thead>
